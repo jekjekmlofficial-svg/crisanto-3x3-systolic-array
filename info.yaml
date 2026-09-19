@@ -1,13 +1,13 @@
 # Tiny Tapeout project information
 project:
-  title:        "4-bit 3x3 Systolic Array Matrix Multiplier"
+  title:        "4-bit 2x2 Systolic Array Matrix Multiplier"
   author:       "CrisantoCPE"
   discord:      ""
-  description:  "A signed 4-bit 3x3 output-stationary systolic array matrix multiplier"
+  description:  "A signed 4-bit 2x2 output-stationary systolic array matrix multiplier"
   language:     "Verilog"
   clock_hz:     50000000
 
-  # Start with one tile; we will evaluate actual IHP area after GDS.
+  # Keep the design in a single tile.
   tiles: "1x1"
 
   top_module:  "tt_um_crisanto_systolic"
@@ -16,7 +16,6 @@ project:
     - "project.v"
 
 pinout:
-  # Inputs
   ui[0]: "DATA[0]"
   ui[1]: "DATA[1]"
   ui[2]: "DATA[2]"
@@ -26,7 +25,6 @@ pinout:
   ui[6]: "DATA[6]"
   ui[7]: "DATA[7]"
 
-  # Outputs
   uo[0]: "RESULT[0]"
   uo[1]: "RESULT[1]"
   uo[2]: "RESULT[2]"
@@ -36,7 +34,6 @@ pinout:
   uo[6]: "RESULT[6]"
   uo[7]: "RESULT[7]"
 
-  # Bidirectional pins
   uio[0]: "START / RESULT[8]"
   uio[1]: ""
   uio[2]: ""
