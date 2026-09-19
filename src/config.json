@@ -33,6 +33,7 @@
 
   "//": "Area experiment: enable Booth multiplier mapping for 4x4 signed PE multipliers.",
   "SYNTH_MUL_BOOTH": true,
+  "SYNTH_STRATEGY": "AREA 2",
 
   "//": "Configuration docs: https://librelane.readthedocs.io/en/latest/reference/configuration.html",
 
